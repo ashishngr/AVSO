@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home | Your Clinic</title>
+  <meta name="description" content="Advanced skin, hair, and laser treatments with a patient-first approach." />
+  <meta name="theme-color" content="#0f766e" />
+  <meta property="og:title" content="Home | Your Clinic" />
+  <meta property="og:description" content="Advanced skin, hair, and laser treatments with a patient-first approach." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Your Clinic" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="assets/css/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/img/logo.svg" alt="Your Clinic logo" width="36" height="36" />
+        <span class="brand-text">
+          <strong>Your Clinic</strong>
+          <small>Skin • Hair • Laser Care</small>
+        </span>
+      </a>
+
+      <!-- Mobile nav toggle (CSS only) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+      <label for="nav-toggle" class="burger" aria-hidden="true" tabindex="0">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Confident skin & hair start here.</h1>
+          <p>Personalized treatments—backed by science, performed by specialists.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="services.html">Explore Services</a>
+            <a class="btn btn-ghost" href="contact.html">Book a Consultation</a>
+          </div>
+          <ul class="trust-badges" role="list">
+            <li>Dermatology-led</li>
+            <li>US-FDA approved devices</li>
+            <li>Ethical, transparent care</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <img src="assets/img/hero.svg" alt="Smiling patient receiving professional skin consultation" />
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Why choose us</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Personalized Plans</h3>
+            <p>No one-size-fits-all. Your plan is tailored to your goals, skin type, and lifestyle.</p>
+          </article>
+          <article class="card">
+            <h3>Proven Technology</h3>
+            <p>We use globally trusted devices and clinically studied protocols for predictable results.</p>
+          </article>
+          <article class="card">
+            <h3>Aftercare Support</h3>
+            <p>Clear pre- and post-care guidance plus check-ins to ensure you heal and glow safely.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlight">
+      <div class="container highlight-grid">
+        <div>
+          <h2>Laser Hair Reduction</h2>
+          <p>Smoother skin with long-term hair reduction. Suitable for face and body areas with custom parameters for your skin & hair type.</p>
+          <ul class="bullets" role="list">
+            <li>Session time: 15–60 minutes</li>
+            <li>Downtime: None</li>
+            <li>Results: Progressive reduction across 6–8 sessions</li>
+          </ul>
+          <a class="btn btn-outline" href="services.html#laser-hair-reduction">View details</a>
+        </div>
+        <img class="highlight-img" src="assets/img/laser.svg" alt="Illustration of laser hair reduction" />
+      </div>
+    </section>
+
+    <section class="home-services">
+      <div class="container">
+        <h2 class="section-title">Top Services</h2>
+        <div class="cards">
+          <article class="card">
+            <h3><a href="services.html#acne-management">Acne Management</a></h3>
+            <p>Target breakouts and scars with medical therapy, peels, and microneedling.</p>
+          </article>
+          <article class="card">
+            <h3><a href="services.html#prp-hair">PRP for Hair</a></h3>
+            <p>Use your body’s growth factors to support hair thickness and density.</p>
+          </article>
+          <article class="card">
+            <h3><a href="services.html#chemical-peels">Chemical Peels</a></h3>
+            <p>Gentle resurfacing to even tone, brighten, and smooth texture.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container cta-banner-inner">
+        <div>
+          <h2>Ready to start?</h2>
+          <p>Book a consultation to get a personalized plan and transparent quote.</p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section aria-labelledby="f-about">
+        <h3 id="f-about">Your Clinic</h3>
+        <p>Comprehensive dermatology, trichology, and laser aesthetics delivered with evidence-based care.</p>
+        <p class="muted">© 2025 Your Clinic. All rights reserved.</p>
+      </section>
+      <section aria-labelledby="f-links">
+        <h3 id="f-links">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="f-contact">
+        <h3 id="f-contact">Contact</h3>
+        <address>
+          123 Wellness Avenue, Block A, Your City<br/>
+          <a href="tel:+911234567890">+91 12345 67890</a><br/>
+          <a href="mailto:hello@www.yourclinic.example">hello@www.yourclinic.example</a>
+        </address>
+      </section>
+    </div>
+  </footer>
+  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+</body>
+</html>

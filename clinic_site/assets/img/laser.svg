@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#ffffff"/>
+  <g stroke="#0f766e" stroke-width="2" fill="none">
+    <rect x="140" y="120" width="620" height="360" rx="24" />
+    <line x1="160" y1="300" x2="740" y2="300" />
+    <line x1="220" y1="240" x2="680" y2="240" />
+    <line x1="220" y1="360" x2="680" y2="360" />
+  </g>
+  <g stroke="#0d9488" stroke-width="6">
+    <line x1="120" y1="120" x2="240" y2="180" />
+    <line x1="780" y1="420" x2="660" y2="360" />
+  </g>
+  <text x="450" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" fill="#0f766e">
+    Laser Hair Reduction
+  </text>
+</svg>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | Your Clinic</title>
+  <meta name="description" content="Book an appointment or ask a question—clinic address, phone and contact form." />
+  <meta name="theme-color" content="#0f766e" />
+  <meta property="og:title" content="Contact Us | Your Clinic" />
+  <meta property="og:description" content="Book an appointment or ask a question—clinic address, phone and contact form." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Your Clinic" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="assets/css/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/img/logo.svg" alt="Your Clinic logo" width="36" height="36" />
+        <span class="brand-text">
+          <strong>Your Clinic</strong>
+          <small>Skin • Hair • Laser Care</small>
+        </span>
+      </a>
+
+      <!-- Mobile nav toggle (CSS only) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+      <label for="nav-toggle" class="burger" aria-hidden="true" tabindex="0">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Have a question or want to book a consultation? Send us a message and we’ll get back to you.</p>
+      </div>
+    </section>
+
+    <section class="container contact-grid">
+      <form class="card contact-form" action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Send a Message</legend>
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="+91 12345 67890" pattern="^[0-9+\-()\s]{7,}$" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="service">Service</label>
+          <select id="service" name="service">
+            <option>Acne Management</option>
+            <option>Pigmentation Correction</option>
+            <option>Chemical Peels</option>
+            <option>Microneedling</option>
+            <option>PRP for Hair</option>
+            <option>Hair Transplant (FUE)</option>
+            <option>Scalp Health Program</option>
+            <option>Laser Hair Reduction</option>
+            <option>Laser Toning</option>
+            <option>Minor Lesion Removal</option>
+            <option>Medical Facial</option>
+            <option>Anti‑Aging Injectables</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your goals" required></textarea>
+
+          <label class="checkbox">
+            <input type="checkbox" id="agree" required />
+            <span>I agree to be contacted and to the <a href="#">privacy policy</a>.</span>
+          </label>
+
+          <button class="btn btn-primary" type="submit" aria-disabled="true">Submit</button>
+          <p class="muted">This is a static demo form. Connect it to your backend or a form handler (e.g., Netlify/Vercel/Formspark) to receive submissions.</p>
+        </fieldset>
+      </form>
+
+      <div class="card contact-info">
+        <h2>Clinic Details</h2>
+        <address>
+          123 Wellness Avenue, Block A, Your City, India<br/>
+          <a href="tel:+911234567890">+91 12345 67890</a><br/>
+          <a href="mailto:hello@www.yourclinic.example">hello@www.yourclinic.example</a>
+        </address>
+        <div class="map-placeholder" aria-label="Map placeholder">
+          <img src="assets/img/map.svg" alt="Map to clinic location" />
+        </div>
+        <p class="muted">Replace the placeholder map with a Google Maps embed or static image of your location.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section aria-labelledby="f-about">
+        <h3 id="f-about">Your Clinic</h3>
+        <p>Comprehensive dermatology, trichology, and laser aesthetics delivered with evidence-based care.</p>
+        <p class="muted">© 2025 Your Clinic. All rights reserved.</p>
+      </section>
+      <section aria-labelledby="f-links">
+        <h3 id="f-links">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="f-contact">
+        <h3 id="f-contact">Contact</h3>
+        <address>
+          123 Wellness Avenue, Block A, Your City<br/>
+          <a href="tel:+911234567890">+91 12345 67890</a><br/>
+          <a href="mailto:hello@www.yourclinic.example">hello@www.yourclinic.example</a>
+        </address>
+      </section>
+    </div>
+  </footer>
+  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+</body>
+</html>

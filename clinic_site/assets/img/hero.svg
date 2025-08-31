@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#ecfeff"/>
+      <stop offset="1" stop-color="#f0fdfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg)"/>
+  <g fill="none" stroke="#0f766e" stroke-width="3" opacity="0.5">
+    <circle cx="300" cy="240" r="120"/>
+    <circle cx="560" cy="320" r="150"/>
+    <path d="M150 420c80-40 160-40 240 0s160 40 240 0 160-40 240 0" />
+  </g>
+  <g fill="#0f766e" opacity="0.9">
+    <rect x="250" y="180" width="60" height="120" rx="16"/>
+    <rect x="330" y="160" width="60" height="140" rx="16"/>
+    <rect x="410" y="190" width="60" height="110" rx="16"/>
+  </g>
+  <text x="450" y="520" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" fill="#0f766e">
+    Healthy skin & hair, scientifically.
+  </text>
+</svg>
