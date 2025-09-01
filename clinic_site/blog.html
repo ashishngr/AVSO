@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact Us | AVSO-ASTENTICS & WELLNESS</title>
-  <meta name="description" content="Get in touch with AVSO-ASTENTICS & WELLNESS — address, phone, email, and booking support." />
+  <title>Blog | AVSO-ASTENTICS & WELLNESS</title>
+  <meta name="description" content="Insights on skin, hair, laser and wellness from AVSO-ASTENTICS & WELLNESS." />
   <meta name="theme-color" content="#0ea5e9" />
-  <meta property="og:title" content="Contact Us | AVSO-ASTENTICS & WELLNESS" />
-  <meta property="og:description" content="Clinic address, phone numbers, email, and booking information." />
+  <meta property="og:title" content="Blog | AVSO-ASTENTICS & WELLNESS" />
+  <meta property="og:description" content="Articles on skin, hair, laser and wellness — coming soon." />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="AVSO-ASTENTICS & WELLNESS" />
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
-<body id="top">
+<body id="top" class="blog-page">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
@@ -42,7 +42,6 @@
         </span>
       </a>
 
-      <!-- Mobile nav toggle (CSS only) -->
       <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-controls="primary-nav" />
       <label for="nav-toggle" class="burger" aria-hidden="true" tabindex="0">
         <span></span><span></span><span></span>
@@ -53,88 +52,41 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html" aria-current="page" class="btn btn-primary">Contact Us</a></li>
+          <li><a href="blog.html" aria-current="page">Blog</a></li>
+          <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="page-header">
-      <div class="container">
-        <h1>Contact Us</h1>
-        <p>Have a question or want to book a consultation? Call us or send a message — we’ll respond quickly during clinic hours.</p>
-      </div>
-    </section>
-
-    <section class="container contact-grid">
-      <form class="card contact-form" action="#" method="post" novalidate>
-        <fieldset>
-          <legend>Send a Message</legend>
-          <label for="name">Full Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" required />
-
-          <label for="phone">Phone</label>
-          <input id="phone" name="phone" type="tel" placeholder="+91 12345 67890" pattern="^[0-9+\-()\s]{7,}$" required />
-
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required />
-
-          <label for="service">Service</label>
-          <select id="service" name="service">
-            <optgroup label="Skin">
-              <option>Acne Scars</option>
-              <option>Pigmentation</option>
-              <option>Chemical Peels</option>
-              <option>Medi Facial / Hydra Facial</option>
-              <option>Dermapen 4</option>
-              <option>Vampire Face Lift (PRP)</option>
-              <option>Botox</option>
-              <option>Fillers</option>
-              <option>Body Contouring</option>
-              <option>Radio Frequency</option>
-              <option>Under Eye Dark Circles</option>
-              <option>Cosmelan</option>
-            </optgroup>
-            <optgroup label="Hair">
-              <option>Hair Transplant (FUE)</option>
-              <option>Hair PRP / GFC</option>
-              <option>Mesotherapy</option>
-            </optgroup>
-            <optgroup label="Laser">
-              <option>Laser Hair Reduction</option>
-              <option>Laser Tattoo Removal</option>
-              <option>Laser for Skin Tags / Warts</option>
-              <option>Laser Mole Removal</option>
-            </optgroup>
-          </select>
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell us about your goals" required></textarea>
-
-          <label class="checkbox">
-            <input type="checkbox" id="agree" required />
-            <span>I agree to be contacted and to the <a href="#">privacy policy</a>.</span>
-          </label>
-
-          <button class="btn btn-primary" type="submit" aria-disabled="true">Submit</button>
-          <p class="muted">This is a static demo form. Connect it to your backend or a form handler (e.g., Netlify/Vercel/Formspark) to receive submissions.</p>
-        </fieldset>
-      </form>
-
-      <div class="card contact-info">
-        <h2>Clinic Details</h2>
-        <address>
-          Ground Floor, Shop No 19, Street 76, Link road sector 76,<br/>
-          Near Amarapali Silicon City, Noida UP, 201307.<br/>
-          <a href="tel:+918800586733">+91 8800586733</a> · <a href="tel:+918860029768">8860029768</a><br/>
-          <a href="mailto:Sonalbhati71@gmail.com">Sonalbhati71@gmail.com</a>
-        </address>
-        <div class="map-placeholder" aria-label="Map placeholder">
-          <img src="assets/img/map.svg" alt="Map to clinic location" />
+    <section class="services-hero">
+      <div class="container services-hero-grid">
+        <div class="services-hero-text" style="text-align:center;grid-column:1/-1">
+          <h1>Blog</h1>
+          <p class="muted">Articles and insights on skin, hair, laser and wellness.</p>
         </div>
-        <p class="muted">Replace the placeholder map with a Google Maps embed or static image of your location.</p>
+        <div class="services-hero-art" aria-hidden="true" style="grid-column:1/-1">
+          <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" class="services-illustration" style="max-width:720px;margin:0 auto;display:block">
+            <defs>
+              <linearGradient id="soonGrad1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#0ea5e9"/>
+                <stop offset="100%" stop-color="#a855f7"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="640" height="300" fill="none"/>
+            <g transform="translate(120,80)">
+              <rect x="-10" y="-10" width="420" height="160" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+              <rect x="0" y="0" width="400" height="16" rx="8" fill="url(#soonGrad1)"/>
+              <rect x="24" y="36" width="240" height="12" rx="6" fill="#e2e8f0"/>
+              <rect x="24" y="56" width="300" height="12" rx="6" fill="#e2e8f0"/>
+              <rect x="24" y="76" width="260" height="12" rx="6" fill="#e2e8f0"/>
+            </g>
+            <g>
+              <text x="320" y="250" text-anchor="middle" font-size="42" font-weight="800" fill="url(#soonGrad1)">Coming Soon</text>
+            </g>
+          </svg>
+        </div>
       </div>
     </section>
   </main>
@@ -186,7 +138,6 @@
           <li><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><a href="index.html">Home</a></li>
           <li><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span><a href="about.html">About Us</a></li>
           <li><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></span><a href="services.html">Services</a></li>
-          <li><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 8h8v2H8zM8 12h8v2H8z"/></svg></span><a href="blog.html">Blog</a></li>
           <li><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.15 8.81 19.79 19.79 0 0 1 .08 0 2 2 0 0 1 2.05 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.77.61 2.6a2 2 0 0 1-.45 2.11L6 9a16 16 0 0 0 9 9l.57-.21a2 2 0 0 1 2.11.45c.83.29 1.7.49 2.6.61A2 2 0 0 1 22 16.92z"/></svg></span><a href="contact.html">Contact Us</a></li>
         </ul>
       </section>

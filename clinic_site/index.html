@@ -3,41 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home | Your Clinic</title>
-  <meta name="description" content="Advanced skin, hair, and laser treatments with a patient-first approach." />
-  <meta name="theme-color" content="#0f766e" />
-  <meta property="og:title" content="Home | Your Clinic" />
-  <meta property="og:description" content="Advanced skin, hair, and laser treatments with a patient-first approach." />
+  <title>Home | AVSO-ASTENTICS & WELLNESS</title>
+  <meta name="description" content="AVSO-ASTENTICS & WELLNESS — advanced skin, hair, laser and wellness care with a patient-first approach." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta property="og:title" content="Home | AVSO-ASTENTICS & WELLNESS" />
+  <meta property="og:description" content="Advanced skin, hair, laser and wellness care with a patient-first approach." />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Your Clinic" />
+  <meta property="og:site_name" content="AVSO-ASTENTICS & WELLNESS" />
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="preload" href="assets/css/styles.css" as="style" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
-<body>
+<body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand">
-        <img src="assets/img/logo.svg" alt="Your Clinic logo" width="36" height="36" />
+        <svg class="logo-mark" width="36" height="36" viewBox="0 0 48 48" role="img" aria-label="AVSO-ASTENTICS & WELLNESS" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#0ea5e9"/>
+              <stop offset="100%" stop-color="#a855f7"/>
+            </linearGradient>
+            <radialGradient id="logoGlow" cx="50%" cy="40%" r="60%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity=".35"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#logoGrad)"/>
+          <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#logoGlow)"/>
+          <!-- Stylized A/V monogram -->
+          <path d="M14 34 L24 12 L34 34" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M18 24 H30" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+        </svg>
         <span class="brand-text">
-          <strong>Your Clinic</strong>
-          <small>Skin • Hair • Laser Care</small>
+          <strong>AVSO-ASTENTICS & WELLNESS</strong>
+          <small>Aesthetics • Wellness • Laser Care</small>
         </span>
       </a>
 
       <!-- Mobile nav toggle (CSS only) -->
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-controls="primary-nav" />
       <label for="nav-toggle" class="burger" aria-hidden="true" tabindex="0">
         <span></span><span></span><span></span>
       </label>
 
-      <nav class="site-nav" aria-label="Primary">
+      <nav id="primary-nav" class="site-nav" aria-label="Primary">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
         </ul>
       </nav>
@@ -48,39 +65,134 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <h1>Confident skin & hair start here.</h1>
-          <p>Personalized treatments—backed by science, performed by specialists.</p>
+          <h1>Feel your best, look your brightest.</h1>
+          <p>Personalized aesthetics and wellness care — science-led, compassion-first.</p>
           <div class="cta">
             <a class="btn btn-primary" href="services.html">Explore Services</a>
             <a class="btn btn-ghost" href="contact.html">Book a Consultation</a>
           </div>
           <ul class="trust-badges" role="list">
-            <li>Dermatology-led</li>
-            <li>US-FDA approved devices</li>
-            <li>Ethical, transparent care</li>
+            <li>
+              <span class="badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M16.707 5.293a1 1 0 0 1 0 1.414l-7.5 7.5a1 1 0 0 1-1.414 0l-3-3a1 1 0 1 1 1.414-1.414L8.5 12.086l6.793-6.793a1 1 0 0 1 1.414 0z"/></svg>
+              </span>
+              Dermatologist‑supervised care
+            </li>
+            <li>
+              <span class="badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M16.707 5.293a1 1 0 0 1 0 1.414l-7.5 7.5a1 1 0 0 1-1.414 0l-3-3a1 1 0 1 1 1.414-1.414L8.5 12.086l6.793-6.793a1 1 0 0 1 1.414 0z"/></svg>
+              </span>
+              US‑FDA & CE certified devices
+            </li>
+            <li>
+              <span class="badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M16.707 5.293a1 1 0 0 1 0 1.414l-7.5 7.5a1 1 0 0 1-1.414 0l-3-3a1 1 0 1 1 1.414-1.414L8.5 12.086l6.793-6.793a1 1 0 0 1 1.414 0z"/></svg>
+              </span>
+              Personalized treatment plans
+            </li>
+            <li>
+              <span class="badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M16.707 5.293a1 1 0 0 1 0 1.414l-7.5 7.5a1 1 0 0 1-1.414 0l-3-3a1 1 0 1 1 1.414-1.414L8.5 12.086l6.793-6.793a1 1 0 0 1 1.414 0z"/></svg>
+              </span>
+              Transparent pricing & aftercare
+            </li>
           </ul>
         </div>
         <div class="hero-media">
-          <img src="assets/img/hero.svg" alt="Smiling patient receiving professional skin consultation" />
+          <svg class="hero-illustration" viewBox="0 0 520 360" role="img" aria-labelledby="heroArtTitle heroArtDesc" xmlns="http://www.w3.org/2000/svg">
+            <title id="heroArtTitle">Aesthetic wellness consultation illustration</title>
+            <desc id="heroArtDesc">Abstract cards, profile and device shapes with vibrant gradients representing skincare and laser wellness.</desc>
+            <defs>
+              <linearGradient id="grad-primary" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#0ea5e9"/>
+                <stop offset="100%" stop-color="#a855f7"/>
+              </linearGradient>
+              <linearGradient id="grad-accent" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#a855f7"/>
+                <stop offset="100%" stop-color="#ec4899"/>
+              </linearGradient>
+              <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+                <stop offset="0%" stop-color="#a855f7" stop-opacity=".25"/>
+                <stop offset="60%" stop-color="#0ea5e9" stop-opacity=".15"/>
+                <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <!-- soft background glows -->
+            <rect x="0" y="0" width="520" height="360" fill="url(#glow)"/>
+
+            <!-- main card -->
+            <g transform="translate(40,40)">
+              <rect width="320" height="200" rx="16" fill="#ffffff" stroke="#e5e7eb"/>
+              <!-- avatar -->
+              <circle cx="68" cy="76" r="28" fill="url(#grad-primary)"/>
+              <circle cx="68" cy="68" r="6" fill="#ffffff" fill-opacity=".9"/>
+              <!-- text lines -->
+              <rect x="116" y="56" width="168" height="10" rx="5" fill="#e2e8f0"/>
+              <rect x="116" y="76" width="140" height="10" rx="5" fill="#e2e8f0"/>
+              <rect x="24" y="124" width="272" height="10" rx="5" fill="#e2e8f0"/>
+              <rect x="24" y="144" width="220" height="10" rx="5" fill="#e2e8f0"/>
+              <!-- CTA pill -->
+              <rect x="24" y="168" width="118" height="28" rx="14" fill="url(#grad-primary)"/>
+            </g>
+
+            <!-- device/laser panel -->
+            <g transform="translate(300,160)">
+              <rect width="180" height="140" rx="16" fill="#ffffff" stroke="#e5e7eb"/>
+              <rect x="16" y="16" width="148" height="16" rx="8" fill="url(#grad-accent)"/>
+              <rect x="16" y="44" width="148" height="12" rx="6" fill="#e2e8f0"/>
+              <rect x="16" y="62" width="116" height="12" rx="6" fill="#e2e8f0"/>
+              <g transform="translate(16,86)">
+                <circle cx="10" cy="10" r="10" fill="#0ea5e9" fill-opacity=".15"/>
+                <circle cx="10" cy="10" r="5" fill="#0ea5e9"/>
+                <rect x="30" y="4" width="104" height="12" rx="6" fill="#e2e8f0"/>
+              </g>
+            </g>
+
+            <!-- decorative waves -->
+            <path d="M20,308 C120,260 220,356 320,312 C380,286 450,310 500,296" fill="none" stroke="url(#grad-primary)" stroke-width="6" stroke-linecap="round" opacity=".25"/>
+            <path d="M24,324 C124,276 224,372 324,328 C384,302 454,326 504,312" fill="none" stroke="url(#grad-accent)" stroke-width="6" stroke-linecap="round" opacity=".2"/>
+          </svg>
         </div>
       </div>
     </section>
 
     <section class="features">
       <div class="container">
-        <h2 class="section-title">Why choose us</h2>
+        <h2 class="section-title">Why choose AVSO</h2>
         <div class="cards">
           <article class="card">
-            <h3>Personalized Plans</h3>
-            <p>No one-size-fits-all. Your plan is tailored to your goals, skin type, and lifestyle.</p>
+            <div class="icon-badge" aria-hidden="true">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 4H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>
+                <path d="M9 8h6"/>
+                <path d="M9 12h4"/>
+                <path d="M9 16h2"/>
+              </svg>
+            </div>
+            <h3>Tailored Treatment Plans</h3>
+            <p>Precise plans aligned to your skin, goals and lifestyle—no cookie cutters, just outcomes.</p>
           </article>
           <article class="card">
-            <h3>Proven Technology</h3>
-            <p>We use globally trusted devices and clinically studied protocols for predictable results.</p>
+            <div class="icon-badge" aria-hidden="true">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l7 4v6c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-4z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <h3>Clinically Proven Tech</h3>
+            <p>US‑FDA & CE certified devices with evidence‑based protocols for safe, predictable results.</p>
           </article>
           <article class="card">
-            <h3>Aftercare Support</h3>
-            <p>Clear pre- and post-care guidance plus check-ins to ensure you heal and glow safely.</p>
+            <div class="icon-badge" aria-hidden="true">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+              </svg>
+            </div>
+            <h3>Guided Aftercare</h3>
+            <p>Clear pre/post‑care, proactive check‑ins and recovery tracking to keep healing on course.</p>
           </article>
         </div>
       </div>
@@ -89,16 +201,54 @@
     <section class="highlight">
       <div class="container highlight-grid">
         <div>
-          <h2>Laser Hair Reduction</h2>
-          <p>Smoother skin with long-term hair reduction. Suitable for face and body areas with custom parameters for your skin & hair type.</p>
+          <h2>Laser Hair Reduction (LHR)</h2>
+          <p>Precision light targets the hair follicle at the root to reduce regrowth—while cooling keeps skin comfortable. Suitable for face and body with parameters tuned to your skin and hair type.</p>
           <ul class="bullets" role="list">
-            <li>Session time: 15–60 minutes</li>
-            <li>Downtime: None</li>
-            <li>Results: Progressive reduction across 6–8 sessions</li>
+            <li>Areas: face, underarms, bikini, legs, back</li>
+            <li>Skin types: Fitz I–V with custom energy & pulse width</li>
+            <li>Comfort: cooling contact tip; downtime: none</li>
+            <li>Plan: 6–8 sessions, 4–6 weeks apart</li>
           </ul>
           <a class="btn btn-outline" href="services.html#laser-hair-reduction">View details</a>
         </div>
-        <img class="highlight-img" src="assets/img/laser.svg" alt="Illustration of laser hair reduction" />
+        <div class="lhr-media">
+          <svg class="lhr-illustration" viewBox="0 0 520 300" role="img" aria-labelledby="lhrTitle lhrDesc" xmlns="http://www.w3.org/2000/svg">
+            <title id="lhrTitle">Laser hair reduction targeting hair follicles</title>
+            <desc id="lhrDesc">A diagonal laser beam gently passes over skin while targeting follicles beneath the surface.</desc>
+            <defs>
+              <linearGradient id="beamGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ec4899"/>
+                <stop offset="100%" stop-color="#a855f7"/>
+              </linearGradient>
+              <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#fff7ed"/>
+                <stop offset="100%" stop-color="#fde68a"/>
+              </linearGradient>
+            </defs>
+
+            <!-- skin layer -->
+            <rect x="40" y="150" width="440" height="110" rx="12" fill="url(#skinGrad)" stroke="#f5d08a"/>
+            <!-- epidermis line -->
+            <rect x="40" y="150" width="440" height="6" rx="3" fill="#fecaca" fill-opacity=".6"/>
+
+            <!-- follicles -->
+            <g fill="none" stroke="#111827" stroke-linecap="round" stroke-linejoin="round">
+              <!-- left follicle -->
+              <path d="M110 150 C120 200, 120 220, 115 246" stroke-width="2"/>
+              <ellipse cx="115" cy="246" rx="10" ry="6" fill="#111827"/>
+              <!-- middle follicle -->
+              <path d="M260 150 C270 195, 268 220, 262 244" stroke-width="2"/>
+              <ellipse cx="262" cy="244" rx="12" ry="7" fill="#111827"/>
+              <!-- right follicle -->
+              <path d="M380 150 C392 195, 390 220, 386 245" stroke-width="2"/>
+              <ellipse cx="386" cy="245" rx="9" ry="5" fill="#111827"/>
+            </g>
+
+            <!-- laser beam -->
+            <line class="lhr-beam" x1="60" y1="60" x2="460" y2="200" stroke="url(#beamGrad)" stroke-width="6" stroke-linecap="round" opacity=".5"/>
+            <circle class="lhr-pulse" cx="60" cy="60" r="7" fill="#ec4899"/>
+          </svg>
+        </div>
       </div>
     </section>
 
@@ -106,17 +256,77 @@
       <div class="container">
         <h2 class="section-title">Top Services</h2>
         <div class="cards">
-          <article class="card">
-            <h3><a href="services.html#acne-management">Acne Management</a></h3>
-            <p>Target breakouts and scars with medical therapy, peels, and microneedling.</p>
+          <article class="card service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="svc1" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#0ea5e9"/>
+                    <stop offset="100%" stop-color="#a855f7"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="32" cy="32" r="22" fill="none" stroke="url(#svc1)" stroke-width="3"/>
+                <path d="M24 28c0-6 4-10 8-10s8 4 8 10c0 10-6 14-8 14s-8-4-8-14z" fill="url(#svc1)" opacity=".25"/>
+              </svg>
+            </div>
+            <h3>Skin</h3>
+            <p>Acne, pigmentation, peels and resurfacing designed for healthy, even‑toned skin.</p>
+            <a class="btn btn-outline btn-more" href="services.html#skin">Explore more <span class="arrow">→</span></a>
           </article>
-          <article class="card">
-            <h3><a href="services.html#prp-hair">PRP for Hair</a></h3>
-            <p>Use your body’s growth factors to support hair thickness and density.</p>
+
+          <article class="card service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="svc2" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#a855f7"/>
+                    <stop offset="100%" stop-color="#ec4899"/>
+                  </linearGradient>
+                </defs>
+                <path d="M20 46c6-2 10-8 12-18 2 10 6 16 12 18" fill="none" stroke="url(#svc2)" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="44" cy="46" r="3" fill="#ec4899"/>
+              </svg>
+            </div>
+            <h3>Hair</h3>
+            <p>PRP, hair health programs and scalp therapies to support density and growth.</p>
+            <a class="btn btn-outline btn-more" href="services.html#hair">Explore more <span class="arrow">→</span></a>
           </article>
-          <article class="card">
-            <h3><a href="services.html#chemical-peels">Chemical Peels</a></h3>
-            <p>Gentle resurfacing to even tone, brighten, and smooth texture.</p>
+
+          <article class="card service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="svc3" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#ec4899"/>
+                    <stop offset="100%" stop-color="#a855f7"/>
+                  </linearGradient>
+                </defs>
+                <line x1="12" y1="50" x2="52" y2="20" stroke="url(#svc3)" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="12" cy="50" r="4" fill="#ec4899"/>
+              </svg>
+            </div>
+            <h3>Laser</h3>
+            <p>LHR, pigmentation and rejuvenation lasers calibrated for comfort and results.</p>
+            <a class="btn btn-outline btn-more" href="services.html#laser">Explore more <span class="arrow">→</span></a>
+          </article>
+
+          <article class="card service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="svc4" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#0ea5e9"/>
+                    <stop offset="100%" stop-color="#a855f7"/>
+                  </linearGradient>
+                </defs>
+                <path d="M22 40l8-8 12 12" fill="none" stroke="url(#svc4)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 22h20" stroke="#a855f7" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="18" cy="22" r="3" fill="#a855f7"/>
+              </svg>
+            </div>
+            <h3>COSMETOLOGY</h3>
+            <p>Facials, skin boosters and glow‑up treatments for event‑ready radiance.</p>
+            <a class="btn btn-outline btn-more" href="services.html#cosmetology">Explore more <span class="arrow">→</span></a>
           </article>
         </div>
       </div>
@@ -124,41 +334,189 @@
 
     <section class="cta-banner">
       <div class="container cta-banner-inner">
-        <div>
-          <h2>Ready to start?</h2>
-          <p>Book a consultation to get a personalized plan and transparent quote.</p>
+        <div class="cta-copy">
+          <h2>Book your appointment today</h2>
+          <p class="muted" style="margin:.25rem 0 .75rem">Prefer talking it through? Speak with our care coordinator to find the right slot and get quick answers on procedures, pricing, and preparation.</p>
+          <p class="muted" style="margin:-.25rem 0 1rem">Hours: Mon–Sat, 10:00–19:00 • Average wait under 2 minutes</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary btn-cta" href="contact.html">Book Appointment</a>
+            <a class="btn btn-outline" href="tel: 8800586733">Call +91 8800586733</a>
+          </div>
         </div>
-        <a class="btn btn-primary" href="contact.html">Contact Us</a>
+        <div class="cta-art" aria-hidden="true">
+          <svg class="cta-illustration" viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="ctaGrad1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#0ea5e9"/>
+                <stop offset="100%" stop-color="#a855f7"/>
+              </linearGradient>
+              <linearGradient id="ctaGrad2" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#a855f7"/>
+                <stop offset="100%" stop-color="#ec4899"/>
+              </linearGradient>
+            </defs>
+
+            <!-- phone with ringing arcs (enlarged) -->
+            <g transform="translate(210,40) scale(1.35)">
+              <path d="M20 40c18 18 32 10 36 6 2-2 2-6 0-8l-8-8c-2-2-5-2-7 0l-2 2c-4-3-8-7-11-11l2-2c2-2 2-5 0-7l-8-8c-2-2-6-2-8 0-4 4-12 18 6 36z" fill="url(#ctaGrad1)"/>
+              <g class="ring">
+                <path class="ring-arc" d="M40 -4a22 22 0 0 1 22 22" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round"/>
+                <path class="ring-arc" d="M40 -10a28 28 0 0 1 28 28" fill="none" stroke="#ec4899" stroke-width="3" stroke-linecap="round"/>
+              </g>
+            </g>
+          </svg>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <section aria-labelledby="f-about">
-        <h3 id="f-about">Your Clinic</h3>
-        <p>Comprehensive dermatology, trichology, and laser aesthetics delivered with evidence-based care.</p>
-        <p class="muted">© 2025 Your Clinic. All rights reserved.</p>
+      <section aria-labelledby="f-address" class="footer-col left">
+        <h3 id="f-address">Visit & Contact</h3>
+        <ul class="contact-list" role="list">
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-4.35-6-9a6 6 0 1 1 12 0c0 4.65-6 9-6 9z"/><circle cx="12" cy="12" r="2"/></svg>
+            </span>
+            <span>
+              Ground Floor, Shop No 19, Street 76, Link road sector 76,<br/>
+              Near Amarapali Silicon City, Noida UP, 201307.
+            </span>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.15 8.81 19.79 19.79 0 0 1 .08 0 2 2 0 0 1 2.05 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.77.61 2.6a2 2 0 0 1-.45 2.11L6 9a16 16 0 0 0 9 9l.57-.21a2 2 0 0 1 2.11.45c.83.29 1.7.49 2.6.61A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <span>
+              <a href="tel:+918800586733">+91 8800586733</a>
+              <span class="sep">•</span>
+              <a href="tel:+918860029768">8860029768</a>
+            </span>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+            </span>
+            <a href="mailto:Sonalbhati71@gmail.com">Sonalbhati71@gmail.com</a>
+          </li>
+        </ul>
+        
       </section>
-      <section aria-labelledby="f-links">
-        <h3 id="f-links">Quick Links</h3>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+      <section aria-labelledby="f-services" class="footer-col middle">
+        <h3 id="f-services">Services</h3>
+        <ul class="nav-list" role="list">
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M12 2c4 6 6 8 6 12a6 6 0 1 1-12 0c0-4 2-6 6-12z"/></svg>
+            </span>
+            <a href="services.html#skin">Skin</a>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15c4-2 7-6 9-12 2 6 5 10 9 12"/></svg>
+            </span>
+            <a href="services.html#hair">Hair</a>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18L20 6"/><circle cx="4" cy="18" r="2" fill="currentColor"/></svg>
+            </span>
+            <a href="services.html#laser">Laser</a>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 4.9L20 8l-4 3.9L17 18l-5-2.6L7 18l1-6.1L4 8l5.5-1.1L12 2z"/></svg>
+            </span>
+            <a href="services.html#cosmetology">Cosmetology</a>
+          </li>
         </ul>
       </section>
-      <section aria-labelledby="f-contact">
-        <h3 id="f-contact">Contact</h3>
-        <address>
-          123 Wellness Avenue, Block A, Your City<br/>
-          <a href="tel:+911234567890">+91 12345 67890</a><br/>
-          <a href="mailto:hello@www.yourclinic.example">hello@www.yourclinic.example</a>
-        </address>
+      <section aria-labelledby="f-pages" class="footer-col right">
+        <h3 id="f-pages">Pages</h3>
+        <ul class="nav-list" role="list">
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+            </span>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            </span>
+            <a href="about.html">About Us</a>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </span>
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 8h8v2H8zM8 12h8v2H8z"/></svg>
+            </span>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.15 8.81 19.79 19.79 0 0 1 .08 0 2 2 0 0 1 2.05 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.77.61 2.6a2 2 0 0 1-.45 2.11L6 9a16 16 0 0 0 9 9l.57-.21a2 2 0 0 1 2.11.45c.83.29 1.7.49 2.6.61A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
       </section>
     </div>
   </footer>
-  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+  <section class="site-legal" aria-label="Legal">
+    <div class="container legal-inner">
+      <p>© 2025 AVSO-ASTENTICS & WELLNESS. All rights reserved.</p>
+    </div>
+  </section>
+  <a href="#top" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true">
+      <path d="M12 4l-7 7h4v7h6v-7h4z" fill="currentColor"/>
+    </svg>
+  </a>
+
+  <div class="floating-actions" aria-label="Quick actions">
+    <details class="fab-group">
+      <summary class="fab-main" aria-label="Open quick actions">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+      </summary>
+      <div class="fab-list">
+        <details class="fab-item fab-call">
+          <summary aria-label="Show phone numbers">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.15 8.81 19.79 19.79 0 0 1 .08 0 2 2 0 0 1 2.05 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.77.61 2.6a2 2 0 0 1-.45 2.11L6 9a16 16 0 0 0 9 9l.57-.21a2 2 0 0 1 2.11.45c.83.29 1.7.49 2.6.61A2 2 0 0 1 22 16.92z"/></svg>
+          </summary>
+          <div class="fab-menu">
+            <a href="tel:+918800586733">+91 8800586733</a>
+            <a href="tel:+918860029768">8860029768</a>
+          </div>
+        </details>
+        <details class="fab-item fab-mail">
+          <summary aria-label="Email us">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+          </summary>
+          <div class="fab-menu">
+            <a href="mailto:Sonalbhati71@gmail.com">Sonalbhati71@gmail.com</a>
+          </div>
+        </details>
+        <details class="fab-item fab-map">
+          <summary aria-label="View address">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 21s-6-4.35-6-9a6 6 0 1 1 12 0c0 4.65-6 9-6 9z"/><circle cx="12" cy="12" r="2"/></svg>
+          </summary>
+          <div class="fab-menu">
+            <address>
+              Ground Floor, Shop No 19, Street 76,<br/>
+              Link road sector 76, Near Amarapali Silicon City,<br/>
+              Noida UP, 201307.
+            </address>
+          </div>
+        </details>
+      </div>
+    </details>
+  </div>
 </body>
 </html>
